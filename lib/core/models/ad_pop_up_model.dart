@@ -40,6 +40,7 @@ class AdPopUpModel{
 
 
 class AdHomeSliderModel{
+  String? id;
   final String imageUrl;
   final String text;
   final String link;
@@ -48,6 +49,8 @@ class AdHomeSliderModel{
     required this.imageUrl,
     required this.text,
     required this.link,
+    this.id,
+
   });
 
   void launchURL(BuildContext context) async {
@@ -62,6 +65,7 @@ class AdHomeSliderModel{
 
   factory AdHomeSliderModel.fromJson(Map<String, dynamic> json) {
     return AdHomeSliderModel(
+      id: json['id']??'',
       imageUrl: json['imageUrl'],
       text: json['text'],
       link: json['link'],
