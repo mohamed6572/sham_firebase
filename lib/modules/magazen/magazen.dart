@@ -54,7 +54,7 @@ Future<void> _showAdPopup() async {
         }
 
         // If the PDF link is successfully fetched
-        if (state is loadPDFSucces) {
+        if (state is loadPDFSucces||cubit.pdfLink.isNotEmpty) {
           return SfPdfViewer.network(
             cubit.pdfLink,
             key: _pdfViewerKey,

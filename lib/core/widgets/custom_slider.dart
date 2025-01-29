@@ -68,6 +68,7 @@ class _SimpleImageSliderState extends State<SimpleImageSlider> {
             child: Image.network(
               widget.imageUrls[_currentIndex].imageUrl,
               fit: BoxFit.cover,
+              height: 200,
             ),
           ),
         ),

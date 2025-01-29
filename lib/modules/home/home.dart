@@ -31,9 +31,9 @@ class _HomeState extends State<Home> {
         return Center(
           child: SingleChildScrollView(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Image.asset(Assets.imagesAppIcon, width: 300, height: 300),
+                Image.asset(Assets.imagesAppIcon, width: 250, height: 250),
                 const SizedBox(height: 20),
                 // Slider
                 HomeCubit.get(context).homeAds.isNotEmpty
@@ -41,6 +41,7 @@ class _HomeState extends State<Home> {
                   imageUrls: HomeCubit.get(context).homeAds,
                 )
                     : const CircularProgressIndicator(),
+
               ],
             ),
           ),

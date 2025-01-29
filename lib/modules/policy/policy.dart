@@ -44,6 +44,7 @@ class Policy extends StatelessWidget {
                       color: Colors.blueAccent,
                     ),
                     textAlign: TextAlign.center,
+                    textDirection: TextDirection.rtl, // تأكيد الاتجاه من اليمين لليسار
                   ),
                 ),
               ),
@@ -192,7 +193,8 @@ class Policy extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.center,textDirection: TextDirection.rtl,
+
             ),
             const SizedBox(height: 12.0),
             // Content List
@@ -212,6 +214,7 @@ class Policy extends StatelessWidget {
                           color: Colors.grey[800],
                         ),
                         textAlign: TextAlign.center,
+                        textDirection: TextDirection.rtl,
                       ),
                     ),  Text(
                       '• ',
@@ -220,6 +223,7 @@ class Policy extends StatelessWidget {
                         color: Colors.blueAccent,
                       ),
                       textAlign: TextAlign.center,
+                      textDirection: TextDirection.rtl,
                     ),
                   ],
                 ),

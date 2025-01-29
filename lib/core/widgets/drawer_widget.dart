@@ -31,7 +31,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
       height: MediaQuery
           .of(context)
           .size
-          .height * 0.5,
+          .height * 0.55,
       width: 210,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

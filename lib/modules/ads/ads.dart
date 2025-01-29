@@ -49,7 +49,9 @@ class ads extends StatelessWidget {
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
+
                   ),
+                  textDirection: TextDirection.rtl,
                 ),
                 const SizedBox(height: 12.0),
                 // Step-by-step list
@@ -77,6 +79,7 @@ class ads extends StatelessWidget {
                               height: 1.6,
                               color: Colors.grey[800],
                             ),
+                            textDirection: TextDirection.rtl,
                           ),
                         ),   Text(
                           '• ',
