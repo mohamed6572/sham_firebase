@@ -28,12 +28,14 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return BlocBuilder<HomeCubit, HomeState>(
       builder: (context, state) {
-        return Center(
-          child: SingleChildScrollView(
+        return SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.asset(Assets.imagesAppIcon, width: 250, height: 250),
+                Image.asset(Assets.imagesAppIcon, width: 150, height: 150),
                 const SizedBox(height: 20),
                 // Slider
                 HomeCubit.get(context).homeAds.isNotEmpty
