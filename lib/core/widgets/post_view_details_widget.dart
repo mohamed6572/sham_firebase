@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sham/core/consttant/const.dart';
 import 'package:sham/core/models/post_model.dart';
+import 'package:sham/core/utils/app_colors.dart';
 import 'package:sham/core/utils/app_images.dart';
 import 'package:sham/modules/image_preview_screen/image_preview_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -80,6 +81,33 @@ class PostViewDetailsWidget extends StatelessWidget {
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Divider( color: AppColors.primaryColor,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+
+                      Text(
+                        'محمد بنسالم البوشي  شبكة صحم',
+                        style: TextStyle(
+                          fontSize: 12,
+
+                        ),
+                      ),  Text(
+                        ' : ناشر المحتوى', style: TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      ),
+
+                    ],
+                  ),
+                  Divider(
+                    color:AppColors.primaryColor,
+
                   ),
                   const SizedBox(
                     height: 20,

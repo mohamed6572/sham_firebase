@@ -135,24 +135,24 @@ Home(),
         ],
       ),
 
-      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
-      floatingActionButton: Container(
-        margin: EdgeInsets.only(bottom: 60),
-        child:CurrentIndedx==0? FloatingActionButton(
-          onPressed: () async {
-            _contactViaWhatsApp(context);
-          },
-          backgroundColor: Colors.green,
-          tooltip: 'Increment',
-
-          child:  Image.asset(
-
-            Assets.imagesWhatsapIcon,
-            height: 30,
-            color: Colors.white,
-          ),
-        ):Container(),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      // floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      // floatingActionButton: Container(
+      //   margin: EdgeInsets.only(bottom: 60),
+      //   child:CurrentIndedx==0? FloatingActionButton(
+      //     onPressed: () async {
+      //       _contactViaWhatsApp(context);
+      //     },
+      //     backgroundColor: Colors.green,
+      //     tooltip: 'Increment',
+      //
+      //     child:  Image.asset(
+      //
+      //       Assets.imagesWhatsapIcon,
+      //       height: 30,
+      //       color: Colors.white,
+      //     ),
+      //   ):Container(),
+      // ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 

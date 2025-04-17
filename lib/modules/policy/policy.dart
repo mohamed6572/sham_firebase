@@ -80,83 +80,83 @@ class Policy extends StatelessWidget {
 
               const SizedBox(height: 20.0),
 
-              // Contact Section
-              // Container(
-              //   decoration: BoxDecoration(
-              //     color: Colors.white,
-              //     borderRadius: BorderRadius.circular(16.0),
-              //     boxShadow: [
-              //       BoxShadow(
-              //         color: Colors.grey.withOpacity(0.2),
-              //         spreadRadius: 4,
-              //         blurRadius: 8,
-              //         offset: Offset(0, 4), // Shadow position
-              //       ),
-              //     ],
-              //   ),
-              //   child: Padding(
-              //     padding: const EdgeInsets.all(16.0),
-              //     child: Column(
-              //       children: [
-              //         Text(
-              //           'للتواصل معنا:',
-              //           style: TextStyle(
-              //             fontSize: 18,
-              //             fontWeight: FontWeight.bold,
-              //             color: Colors.blueAccent,
-              //           ),
-              //           textAlign: TextAlign.center,
-              //         ),
-              //         const SizedBox(height: 10.0),
-              //         Row(
-              //           mainAxisAlignment: MainAxisAlignment.center,
-              //           children: [
-              //             Image.asset(Assets.imagesWhatsapIcon, width: 24, height: 24
-              //             ),
-              //             const SizedBox(width: 8.0),
-              //             Text(
-              //               '95516675 (واتساب فقط)',
-              //               style: TextStyle(
-              //                 fontSize: 16,
-              //                 color: Colors.grey[800],
-              //               ),
-              //               textAlign: TextAlign.center,
-              //             ),
-              //           ],
-              //         ), const SizedBox(height: 10.0),
-              //         Row(
-              //           mainAxisAlignment: MainAxisAlignment.center,
-              //           children: [
-              //             Icon(Icons.email_outlined),
-              //             const SizedBox(width: 8.0),
-              //             Text(
-              //               '(البريد الإلكتروني)',
-              //               style: TextStyle(
-              //                 fontSize: 16,
-              //                 color: Colors.grey[800],
-              //               ),
-              //               textAlign: TextAlign.center,
-              //             ),
-              //           ],
-              //         ),
-              //         const SizedBox(height: 10.0),
-              //
-              //             SizedBox(
-              //               width: MediaQuery.of(context).size.width * 0.8,
-              //               child: Text(
-              //                 'albalushi.mohammed1981@gmail.com',
-              //                 style: TextStyle(
-              //                   fontSize: 16,
-              //                   color: Colors.grey[800],
-              //                 ),
-              //                 textAlign: TextAlign.center,
-              //               ),
-              //             ),
-              //
-              //       ],
-              //     ),
-              //   ),
-              // ),
+            //  Contact Section
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(16.0),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 4,
+                      blurRadius: 8,
+                      offset: Offset(0, 4), // Shadow position
+                    ),
+                  ],
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: [
+                      Text(
+                        'للتواصل معنا:',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blueAccent,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 10.0),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(Assets.imagesWhatsapIcon, width: 24, height: 24
+                          ),
+                          const SizedBox(width: 8.0),
+                          Text(
+                            '95516675 (واتساب فقط)',
+                            style: TextStyle(
+                              fontSize: 16,
+                              color: Colors.grey[800],
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ), const SizedBox(height: 10.0),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.email_outlined),
+                          const SizedBox(width: 8.0),
+                          Text(
+                            '(البريد الإلكتروني)',
+                            style: TextStyle(
+                              fontSize: 16,
+                              color: Colors.grey[800],
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 10.0),
+
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width * 0.8,
+                            child: Text(
+                              'albalushi.mohammed1981@gmail.com',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.grey[800],
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),

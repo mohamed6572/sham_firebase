@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:sham/modules/support/support.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../../modules/ads/ads.dart';
@@ -46,6 +47,11 @@ class _DrawerWidgetState extends State<DrawerWidget> {
           }),
           drawer_widget(icon: Icons.sms_outlined, text: 'سياسة الخصوصية', function: (){
             Navigator.push(context, MaterialPageRoute(builder:(context) => Policy(),));
+            setState(() {
+             // showInterstitialAd1();
+            });
+          }),    drawer_widget(icon: Icons.support_agent, text: 'الدعم', function: (){
+            Navigator.push(context, MaterialPageRoute(builder:(context) => Support(),));
             setState(() {
              // showInterstitialAd1();
             });

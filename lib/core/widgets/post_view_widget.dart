@@ -62,14 +62,45 @@ class PostViewWidget extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.end,
-            //   children: [
-            //     Text(
-            //       '${formatDateTime(postModel.dateTime)}',
-            //     ),
-            //   ],
-            // ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [ Text(
+                'تاريخ النشر : ', style: TextStyle(
+                fontSize: 13,
+                fontWeight: FontWeight.bold,
+              ),
+              ),
+                Text(
+                  '${formatDateTime(postModel.dateTime)} ',
+                  style: TextStyle(
+                    fontSize: 12,
+
+                  ),
+                ),
+
+              ],
+            ),  const SizedBox(
+              height: 10,
+            ), Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Text(
+                  'ناشر المحتوى : ', style: TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.bold,
+                ),
+                ),
+                Text(
+                  'محمد بنسالم البوشي  شبكة صحم',
+                  style: TextStyle(
+                    fontSize: 12,
+
+                  ),
+                ),
+
+              ],
+            ),
+
           ],
         ),
       ),

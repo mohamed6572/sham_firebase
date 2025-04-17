@@ -68,9 +68,10 @@ class _SimpleImageSliderState extends State<SimpleImageSlider> {
   }
 
   Widget _buildIndicator() {
+    final visibleLength = widget.imageUrls.length > 20 ? 20 : widget.imageUrls.length;
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: List.generate(widget.imageUrls.length, (index) {
+      children: List.generate(visibleLength, (index) {
         return Container(
           margin: const EdgeInsets.symmetric(horizontal: 4),
           width: _currentIndex == index ? 10 : 6,
